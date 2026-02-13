@@ -25,16 +25,16 @@
     <!-- customs css -->
     <style>
       * {
-        font-family: 'Manrope', sans-serif;
+        font-family: "Manrope", sans-serif;
       }
     </style>
   </head>
   <body>
     <!-- banner section  -->
     <section class="my-[68px]">
-      <div class="container mx-auto grid grid-cols-2">
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-13">
         <div class="banner-left-section space-y-[30px]">
-          <h1 class="text-[80px] font-extrabold">
+          <h1 class="text-6xl md:text-[80px] font-extrabold">
             It's good tea time at The <br />Tea House
           </h1>
           <p class="text-[#777777]">
@@ -51,11 +51,11 @@
         <div class="banner-right-section relative flex items-end">
           <img src="./images/banner.png" alt="" class="w-full" />
           <div
-            class="bg-[#FFFFFF] flex items-center gap-4 px-6 py-5 drop-shadow-lg absolute left-[150px] bottom-6 rounded-lg"
+            class="bg-[#FFFFFF] flex items-center gap-4 px-4 py-3 md:px-6 md:py-5 drop-shadow-lg absolute left-12 md:left-[150px] bottom-0 md:bottom-6 rounded-lg"
           >
             <img src="./images/Group5.png" alt="" />
             <span>
-              <h3>5.00</h3>
+              <h3 class="text-4xl md:text-3xl font-extrabold">5.00</h3>
               <p>Trust Pilot Ratings</p>
             </span>
           </div>
@@ -74,7 +74,7 @@
             slightly believable.
           </p>
         </div>
-        <div class="feature-card-box grid grid-cols-4 gap-5 mt-13">
+        <div class="feature-card-box grid md:grid-cols-4 gap-5 mt-13">
           <div
             class="feature-card bg-linear-to-b from-[#f4f4f4] to-[#f4f4f400] rounded-lg text-center p-5 flex flex-col justify-around items-center gap-4"
           >
@@ -116,8 +116,8 @@
     </section>
     <!-- Great Tea, Freshly Presented -->
     <section class="my-[68px]">
-      <div class="container mx-auto grid grid-cols-2 gap-13">
-        <div class="great-tea-left grid grid-cols-2 grid-rows-3 gap-5">
+      <div class="container mx-auto grid md:grid-cols-2 gap-13">
+        <div class="great-tea-left grid md:grid-cols-2 grid-rows-3 gap-5">
           <div
             class="bg-linear-to-r from-[#ff883834] to-[#FFF2EB] rounded-lg"
           ></div>
@@ -162,13 +162,13 @@
     <!-- Meet Our Super Clients section -->
     <section>
       <div
-        class="container mx-auto bg-linear-to-r from-[#FF8436] to-[#FF0602] py-14 px-18"
+        class="container mx-auto bg-linear-to-r from-[#FF8436] to-[#FF0602] py-2 md:py-14 px-2 md:px-18"
       >
         <div
-          class="grid grid-cols-2 justify-between items-center gap-13 rounded-lg text-white"
+          class="grid md:grid-cols-2 justify-between items-center gap-13 rounded-lg text-white"
         >
           <div class="client-content space-y-5">
-            <h2 class="text-[3.75rem] font-extrabold">
+            <h2 class="text-4xl md:text-[3.75rem] font-extrabold">
               Meet Our Super <br />
               Clients
             </h2>
@@ -222,7 +222,7 @@
                 <img src="./images/client.png" alt="" />
               </div>
             </div>
-            <div class="absolute top-[140px] -left-6">
+            <div class="absolute top-[140px] letf-0 md:-left-6">
               <div class="card bg-white rounded-lg p-10 w-[433px] relative">
                 <p class="text-[#777777] my-6">
                   We are providing the best and suitable home <br />
@@ -251,7 +251,9 @@
     <section class="my-[68px]">
       <div class="container mx-auto">
         <div class="news-content text-2xl text-center mx-auto space-y-5">
-          <h2 class="text-[3.75rem] font-extrabold">News & Events</h2>
+          <h2 class="text-4xl md:text-[3.75rem] font-extrabold">
+            News & Events
+          </h2>
           <p class="text-[#777777]">
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration in some form, <br />
@@ -259,7 +261,9 @@
             slightly believable.
           </p>
         </div>
-        <div class="news-card-box mt-12 grid grid-cols-3 gap-8">
+        <div
+          class="news-card-box mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
           <div
             class="bg-[#d2d2d21f] shadow-lg rounded-lg p-5 flex flex-col justify-center items-center"
           >
@@ -314,37 +318,45 @@
     <!-- footer section -->
     <footer class="bg-linear-to-r from-[#FFF2EA] to-[#FFE6E6]">
       <div class="container mx-auto py-[134px]">
-        <div class="footer-top flex justify-between items-center gap-5">
+        <div
+          class="footer-top flex justify-between items-center gap-3 md:gap-5"
+        >
           <img src="./images/cup.png" alt="Footer Logo" />
-          <div class="flex justify-between items-center gap-5">
+          <div
+            class="flex flex-col md:flex-row justify-between items-center gap-2 md:gap-5"
+          >
             <h2 class="text-[#494949]">Ready to get started?</h2>
             <button
-              class="py-4 px-5 rounded-lg cursor-pointer text-white bg-linear-to-r from-[#ff8938] to-[#f00] hover:bg-linear-to-r hover:from-[#ff88389f] hover:to-[#ff0000b4] transition-all duration-1000"
+              class="py-2 px-2 md:py-4 md:px-5 rounded-lg cursor-pointer text-white bg-linear-to-r from-[#ff8938] to-[#f00] hover:bg-linear-to-r hover:from-[#ff88389f] hover:to-[#ff0000b4] transition-all duration-1000"
             >
               Get Started
             </button>
           </div>
         </div>
-        <div class="footer-bottom mt-[104px] grid grid-cols-4">
-          <ul class="space-y-2">
-            <h3 class="text-[1.5rem] text-[#1C1C1C]">Quick Links</h3>
-            <li><a href="" class="text-[#494949]">Home</a></li>
-            <li><a href="" class="text-[#494949]">About Us</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="" class="text-[#494949]">Privacy Policy</a></li>
-          </ul>
-          <ul class="space-y-2">
-            <h3 class="text-[1.5rem] text-[#1C1C1C]">Our Service</h3>
-            <li><a href="" class="text-[#494949]">Life Insurance</a></li>
-            <li><a href="" class="text-[#494949]">Car Insurance</a></li>
-            <li><a href="" class="text-[#494949]">Health Insurance</a></li>
-            <li><a href="" class="text-[#494949]">House Insurance</a></li>
-          </ul>
-          <ul class="space-y-2">
-            <h3 class="text-[1.5rem] text-[#1C1C1C]">Help</h3>
-            <li><a href="" class="text-[#494949]">FAQs</a></li>
-            <li><a href="" class="text-[#494949]">Contact Us</a></li>
-          </ul>
+        <div
+          class="footer-bottom mt-[104px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4"
+        >
+          <div class="flex flex-col items-center gap-5">
+            <ul class="space-y-2">
+              <h3 class="text-[1.5rem] text-[#1C1C1C]">Quick Links</h3>
+              <li><a href="" class="text-[#494949]">Home</a></li>
+              <li><a href="" class="text-[#494949]">About Us</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="" class="text-[#494949]">Privacy Policy</a></li>
+            </ul>
+            <ul class="space-y-2">
+              <h3 class="text-[1.5rem] text-[#1C1C1C]">Our Service</h3>
+              <li><a href="" class="text-[#494949]">Life Insurance</a></li>
+              <li><a href="" class="text-[#494949]">Car Insurance</a></li>
+              <li><a href="" class="text-[#494949]">Health Insurance</a></li>
+              <li><a href="" class="text-[#494949]">House Insurance</a></li>
+            </ul>
+            <ul class="space-y-2">
+              <h3 class="text-[1.5rem] text-[#1C1C1C]">Help</h3>
+              <li><a href="" class="text-[#494949]">FAQs</a></li>
+              <li><a href="" class="text-[#494949]">Contact Us</a></li>
+            </ul>
+          </div>
 
           <div>
             <h3 class="text-[1.5rem] text-[#1C1C1C] my-3">
@@ -369,6 +381,9 @@
             </div>
           </div>
         </div>
+        <p class="mt-6 text-[#494949]">
+          ©2026 UIDesign.to - All rights reserved.
+        </p>
       </div>
     </footer>
   </body>
